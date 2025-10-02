@@ -34,7 +34,7 @@ where
             let button = egui::Button::new("🚉").min_size(egui::Vec2::splat(20.0));
             let response = ui.put(rect, button);
             if response.clicked() {
-                (self.on_stop_click)(stop_entity.clone());
+                (self.on_stop_click)(*stop_entity);
             }
         }
     }
@@ -59,7 +59,7 @@ struct MapTiles {
 }
 
 fn setup_camera(mut commands: Commands) {
-    commands.spawn((Camera2d::default(),));
+    commands.spawn((Camera2d,));
 }
 
 fn setup_map(contexts: EguiContexts, mut commands: Commands) {
@@ -83,7 +83,7 @@ fn map_ui(
     let clicked_events_for_closure = Arc::clone(&clicked_events);
     egui::CentralPanel::default().show(egui_ctx, |ui| {
         if let Ok((mut map_tiles, mut map_memory)) = query.single_mut() {
-            let mut map = Map::new(
+            let map = Map::new(
                 Some(&mut map_tiles.tiles),
                 &mut map_memory.map_memory,
                 lat_lon(52.455040534960574, 13.509400840651349),
@@ -120,59 +120,58 @@ fn departure_board(
     stop_query: Query<&StopFacility>,
     departure_query: Query<&Departure>,
 ) {
-    if let Ok(station_details) = station_details_query.single() {
-        if let Some(station_entity) = station_details.station {
-            let ctx = contexts.ctx_mut().unwrap();
-            if let Ok(station) = stop_query.get(station_entity) {
-                egui::SidePanel::right("departure_board")
-                    .resizable(true)
-                    .default_width(300.0)
-                    .show(ctx, |ui| {
-                        ui.horizontal(|ui| {
-                            ui.label(format!(
-                                "Departures for station:\n{}",
-                                station.name.clone().unwrap_or("Unnamed".to_string())
-                            ));
-                            ui.with_layout(egui::Layout::right_to_left(egui::Align::Max), |ui| {
-                                if ui.button("❌").clicked() {
-                                    // Clear selected station
-                                    if let Ok(mut station_details) =
-                                        station_details_query.single_mut()
-                                    {
-                                        station_details.station = None;
-                                    }
+    if let Ok(station_details) = station_details_query.single()
+        && let Some(station_entity) = station_details.station
+    {
+        let ctx = contexts.ctx_mut().unwrap();
+        if let Ok(station) = stop_query.get(station_entity) {
+            egui::SidePanel::right("departure_board")
+                .resizable(true)
+                .default_width(300.0)
+                .show(ctx, |ui| {
+                    ui.horizontal(|ui| {
+                        ui.label(format!(
+                            "Departures for station:\n{}",
+                            station.name.clone().unwrap_or("Unnamed".to_string())
+                        ));
+                        ui.with_layout(egui::Layout::right_to_left(egui::Align::Max), |ui| {
+                            if ui.button("❌").clicked() {
+                                // Clear selected station
+                                if let Ok(mut station_details) = station_details_query.single_mut()
+                                {
+                                    station_details.station = None;
                                 }
-                            });
+                            }
                         });
-                        ui.separator();
-
-                        let mut departures: Vec<&Departure> = station
-                            .departures
-                            .iter()
-                            .filter_map(|e| departure_query.get(*e).ok())
-                            .collect();
-                        departures.sort_by_key(|d| d.departure_time);
-
-                        egui::ScrollArea::vertical()
-                            .auto_shrink(false)
-                            .show(ui, |ui| {
-                                for departure in &departures {
-                                    ui.horizontal(|ui| {
-                                        if let Some(dep_time) = departure.departure_time {
-                                            ui.label(format!("{}", dep_time.format("%H:%M:%S")));
-                                        } else {
-                                            ui.label("unknown time");
-                                        }
-                                        ui.add_space(8.0);
-                                        ui.label(format!(
-                                            "{} -> {}",
-                                            departure.line_name, departure.route_headsign
-                                        ));
-                                    });
-                                }
-                            });
                     });
-            }
+                    ui.separator();
+
+                    let mut departures: Vec<&Departure> = station
+                        .departures
+                        .iter()
+                        .filter_map(|e| departure_query.get(*e).ok())
+                        .collect();
+                    departures.sort_by_key(|d| d.departure_time);
+
+                    egui::ScrollArea::vertical()
+                        .auto_shrink(false)
+                        .show(ui, |ui| {
+                            for departure in &departures {
+                                ui.horizontal(|ui| {
+                                    if let Some(dep_time) = departure.departure_time {
+                                        ui.label(format!("{}", dep_time.format("%H:%M:%S")));
+                                    } else {
+                                        ui.label("unknown time");
+                                    }
+                                    ui.add_space(8.0);
+                                    ui.label(format!(
+                                        "{} -> {}",
+                                        departure.line_name, departure.route_headsign
+                                    ));
+                                });
+                            }
+                        });
+                });
         }
     }
 }

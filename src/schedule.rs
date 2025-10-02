@@ -40,6 +40,7 @@ impl RouteType {
 }
 
 #[derive(Component, Default, Debug, Clone)]
+#[allow(dead_code)]
 pub struct StopFacility {
     pub id: String,
     pub x: f64,
@@ -54,6 +55,7 @@ pub struct StopFacility {
 }
 
 #[derive(Component, Clone, Debug)]
+#[allow(dead_code)]
 pub struct Departure {
     pub line_name: String,
     pub route_headsign: String,
@@ -65,6 +67,7 @@ pub struct Departure {
 }
 
 #[derive(Component, Clone, Debug)]
+#[allow(dead_code)]
 struct Line {
     id: String,
     name: String,
@@ -84,6 +87,7 @@ struct Route {
 }
 
 #[derive(Component, Clone, Debug)]
+#[allow(dead_code)]
 struct Trip {
     id: String,
     route: Entity,
@@ -93,6 +97,7 @@ struct Trip {
 }
 
 #[derive(Component, Clone, Debug)]
+#[allow(dead_code)]
 struct RouteDeparture {
     id: String,
     departure_time: NaiveDateTime,
@@ -102,6 +107,7 @@ struct RouteDeparture {
 
 #[derive(Component, Clone, Debug)]
 struct RouteProfilePoint {
+    #[allow(dead_code)]
     route: Entity,
     stop: Entity,
     arrival_offset: TimeDelta,
@@ -356,7 +362,7 @@ impl SchedulePlugin {
                             b"arrivalOffset" => {
                                 if let Ok(offset) = attr.unescape_value() {
                                     arrival_offset =
-                                        NaiveTime::parse_from_str(&offset.to_string(), "%H:%M:%S")
+                                        NaiveTime::parse_from_str(offset.as_ref(), "%H:%M:%S")
                                             .map(|t| {
                                                 TimeDelta::hours(t.hour() as i64)
                                                     + TimeDelta::minutes(t.minute() as i64)
@@ -368,7 +374,7 @@ impl SchedulePlugin {
                             b"departureOffset" => {
                                 if let Ok(offset) = attr.unescape_value() {
                                     departure_offset =
-                                        NaiveTime::parse_from_str(&offset.to_string(), "%H:%M:%S")
+                                        NaiveTime::parse_from_str(offset.as_ref(), "%H:%M:%S")
                                             .map(|t| {
                                                 TimeDelta::hours(t.hour() as i64)
                                                     + TimeDelta::minutes(t.minute() as i64)
@@ -382,27 +388,27 @@ impl SchedulePlugin {
                     }
 
                     if let Some(stop_id) = stop_id {
-                        let mut stop_facilities = HashMap::new();
+                        let stop_facilities;
                         {
                             let schedule = world.get_resource::<Schedule>().unwrap();
                             stop_facilities = schedule.stop_facilities.clone();
                         }
-                        if let Some(&stop_entity) = stop_facilities.get(&stop_id) {
-                            if let Some(route_entity) = current_route_entity {
-                                let route_profile_point = RouteProfilePoint {
-                                    route: route_entity,
-                                    stop: stop_entity,
-                                    arrival_offset,
-                                    departure_offset,
-                                };
-                                let entity = world.spawn(route_profile_point.clone()).id();
-                                if let Some(mut route) = world.get_mut::<Route>(route_entity) {
-                                    debug!(
-                                        "Added route profile point for stop {} to route {:?}: {:?}",
-                                        stop_id, route, route_profile_point
-                                    );
-                                    route.route_profile.push(entity);
-                                }
+                        if let Some(&stop_entity) = stop_facilities.get(&stop_id)
+                            && let Some(route_entity) = current_route_entity
+                        {
+                            let route_profile_point = RouteProfilePoint {
+                                route: route_entity,
+                                stop: stop_entity,
+                                arrival_offset,
+                                departure_offset,
+                            };
+                            let entity = world.spawn(route_profile_point.clone()).id();
+                            if let Some(mut route) = world.get_mut::<Route>(route_entity) {
+                                debug!(
+                                    "Added route profile point for stop {} to route {:?}: {:?}",
+                                    stop_id, route, route_profile_point
+                                );
+                                route.route_profile.push(entity);
                             }
                         }
                     }
@@ -429,34 +435,33 @@ impl SchedulePlugin {
                                 departure_id = Some(attr.unescape_value().unwrap().to_string())
                             }
                             b"departureTime" => {
-                                if let Ok(time_str) = attr.unescape_value() {
-                                    if let Ok(naive_time) =
-                                        NaiveTime::parse_from_str(&time_str.to_string(), "%H:%M:%S")
-                                    {
-                                        let today = Utc::now().date_naive();
-                                        departure_time = Some(today.and_time(naive_time));
-                                    }
+                                if let Ok(time_str) = attr.unescape_value()
+                                    && let Ok(naive_time) =
+                                        NaiveTime::parse_from_str(time_str.as_ref(), "%H:%M:%S")
+                                {
+                                    let today = Utc::now().date_naive();
+                                    departure_time = Some(today.and_time(naive_time));
                                 }
                             }
                             _ => (),
                         }
                     }
-                    if let (Some(dep_time), Some(dep_id)) = (departure_time, departure_id) {
-                        if let Some(route_entity) = current_route_entity {
-                            let departure = RouteDeparture {
-                                id: dep_id,
-                                departure_time: dep_time,
-                                route: route_entity,
-                                trip: None,
-                            };
-                            let entity = world.spawn(departure).id();
-                            {
-                                let mut schedule = world.get_resource_mut::<Schedule>().unwrap();
-                                schedule.departures.push(entity);
-                            }
-                            if let Some(mut route) = world.get_mut::<Route>(route_entity) {
-                                route.departures.push(entity);
-                            }
+                    if let (Some(dep_time), Some(dep_id)) = (departure_time, departure_id)
+                        && let Some(route_entity) = current_route_entity
+                    {
+                        let departure = RouteDeparture {
+                            id: dep_id,
+                            departure_time: dep_time,
+                            route: route_entity,
+                            trip: None,
+                        };
+                        let entity = world.spawn(departure).id();
+                        {
+                            let mut schedule = world.get_resource_mut::<Schedule>().unwrap();
+                            schedule.departures.push(entity);
+                        }
+                        if let Some(mut route) = world.get_mut::<Route>(route_entity) {
+                            route.departures.push(entity);
                         }
                     }
                 }
@@ -527,7 +532,7 @@ impl SchedulePlugin {
                 let trip = Trip {
                     id: trip_id.clone(),
                     route: route_entity,
-                    line: line,
+                    line,
                     departures: Vec::new(),
                     headsign: headsign.clone(),
                 };
