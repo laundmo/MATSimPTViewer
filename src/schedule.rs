@@ -20,6 +20,7 @@ enum RouteType {
     Other,
 }
 
+// l: use `impl From<u16> for RouteType` instead
 impl RouteType {
     fn from_int(value: u16) -> Option<Self> {
         match value {
@@ -49,9 +50,9 @@ pub struct StopFacility {
     pub stop_area_id: Option<String>,
     pub lat: Option<f64>,
     pub lon: Option<f64>,
-    pub routes: Vec<Entity>,     // relationship?
-    pub lines: Vec<Entity>,      // relationship?
-    pub departures: Vec<Entity>, // relationship?
+    pub routes: Vec<Entity>,     // l: relationship?
+    pub lines: Vec<Entity>,      // l: relationship?
+    pub departures: Vec<Entity>, // l: relationship?
 }
 
 #[derive(Component, Clone, Debug)]
@@ -61,9 +62,9 @@ pub struct Departure {
     pub route_headsign: String,
     pub arrival_time: Option<NaiveDateTime>,
     pub departure_time: Option<NaiveDateTime>,
-    pub stop: Entity,
-    pub trip: Entity,
-    pub route: Entity,
+    pub stop: Entity,  // l: relationship?
+    pub trip: Entity,  // l: relationship?
+    pub route: Entity, // l: relationship?
 }
 
 #[derive(Component, Clone, Debug)]
@@ -73,16 +74,16 @@ struct Line {
     name: String,
     agency_id: Option<String>,
     route_type: Option<RouteType>,
-    routes: Vec<Entity>,
-    trips: Vec<Entity>,
+    routes: Vec<Entity>, // l: relationship?
+    trips: Vec<Entity>,  // l: relationship?
 }
 
 #[derive(Component, Clone, Debug)]
 struct Route {
     id: String,
-    route_profile: Vec<Entity>,
-    departures: Vec<Entity>,
-    trips: Vec<Entity>,
+    route_profile: Vec<Entity>, // l: relationship?
+    departures: Vec<Entity>,    // l: relationship?
+    trips: Vec<Entity>,         // l: relationship?
     line: Entity,
 }
 
@@ -92,7 +93,7 @@ struct Trip {
     id: String,
     route: Entity,
     line: Entity,
-    departures: Vec<Entity>,
+    departures: Vec<Entity>, // l: relationship?
     headsign: Option<String>,
 }
 
@@ -101,15 +102,15 @@ struct Trip {
 struct RouteDeparture {
     id: String,
     departure_time: NaiveDateTime,
-    route: Entity,
-    trip: Option<Entity>,
+    route: Entity,        // l: relationship?
+    trip: Option<Entity>, // l: relationship?
 }
 
 #[derive(Component, Clone, Debug)]
 struct RouteProfilePoint {
     #[allow(dead_code)]
-    route: Entity,
-    stop: Entity,
+    route: Entity, // l: relationship?
+    stop: Entity, // l: relationship?
     arrival_offset: TimeDelta,
     departure_offset: TimeDelta,
 }
@@ -117,11 +118,11 @@ struct RouteProfilePoint {
 #[derive(Resource)]
 pub struct Schedule {
     pub path: String,
-    pub stop_facilities: HashMap<String, Entity>,
-    pub lines: HashMap<String, Entity>,
-    pub routes: Vec<Entity>,
-    pub trips: Vec<Entity>,
-    pub departures: Vec<Entity>,
+    pub stop_facilities: HashMap<String, Entity>, // l: relationship? Bevy has a "Name" component built in for string names
+    pub lines: HashMap<String, Entity>,           // l: relationship?          -||-
+    pub routes: Vec<Entity>,                      // l: relationship?
+    pub trips: Vec<Entity>,                       // l: relationship?
+    pub departures: Vec<Entity>,                  // l: relationship?
 }
 
 impl Schedule {
@@ -142,6 +143,13 @@ pub struct SchedulePlugin {
 }
 
 impl SchedulePlugin {
+    // l: I find it unusual to make a setup system a static function on the plugin,
+    // l: it doesn't take &self, so no need and the common style is a system function named setup_* or *_setup.
+    // l: Second nit: Don't use &mut World unless you have to.
+    // l: I see no reason you couldn't let bevy provide Commands and Schedule, with the exception
+    // l: of the places where you world.get_mut::<Line>(line_entity) - but thats resolved by just... 
+    // l: storing the Line struct until its finished. But this is also irrelevant if
+    // l: you implement my XML parsing suggestion below
     pub fn load(world: &mut World) {
         let path = world.get_resource::<Schedule>().unwrap().path.clone();
         info!("Loading schedule from XML");
@@ -172,7 +180,16 @@ impl SchedulePlugin {
         let mut current_attribute_name: Option<String> = None;
 
         let proj = Proj::new_known_crs("EPSG:25832", "EPSG:4326", None).unwrap();
+        
 
+        // l: This feels like a flawed approach to parsing the XML
+        // l: reading by xml events requires you to handle the nesting yourself, which
+        // l: seems like the reason for all the in_* bools above.
+        // l: Instead, i would recommend parsing the XML into rust structs,
+        // l: using quick-xmls `serialize` feature for serde compat
+        // l: then you can transform those xml-ish structs into your bevy components - or 
+        // l: use them as components directly in some cases.
+        // l: optional long term: implement an asset loader for schedule.xml using bevys asset system
         loop {
             match reader.read_event_into(&mut buf) {
                 Ok(Event::Eof) => break,
@@ -488,7 +505,11 @@ impl SchedulePlugin {
             buf.clear();
         }
     }
-
+    
+    // l: Same as above: i would avoid direct &mut World access unless absolutely necessary. If you need 
+    // l: the data of newly spawned entities right away - just keep a clone of the struct around to spawn later
+    // l: But in general, setting up links between entities is a task for realtionships, using the corresponding tools,
+    // l: like 
     pub fn create_trips_and_departures(world: &mut World) {
         // For each route, create trips and departures
 

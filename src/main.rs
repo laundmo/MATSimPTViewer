@@ -76,6 +76,7 @@ fn map_ui(
     contexts: EguiContexts,
     mut query: Query<(&mut MapTiles, &mut MapMemoryComponent)>,
     stop_query: Query<(Entity, &StopFacility)>,
+    // l: Observer for clicks instead of EventWriter (MessageWriter in 0.17)
     mut ev_station_clicked: EventWriter<StationClickedEvent>,
 ) {
     let egui_ctx = contexts.ctx().expect("Failed to get Egui context");
@@ -103,6 +104,9 @@ fn map_ui(
     }
 }
 
+// l: This would be the Observer function, with the first param being Trigger<StationClicked> (On<StationClicked> in 0.17)
+// l: specifically, a Observer targeting a list of entities, so that it responds to the events triggered on those entities
+// l: the syntax for that is the biggest change to 0.17 so i'm not putting it here.
 fn on_station_clicked(
     mut ev_station_clicked: EventReader<StationClickedEvent>,
     mut query: Query<&mut StationDetails>,
