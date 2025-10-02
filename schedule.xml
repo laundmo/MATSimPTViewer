@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transitSchedule SYSTEM "http://www.matsim.org/files/dtd/transitSchedule_v2.dtd">
+
+<transitSchedule>
+    <attributes>
+        <attribute name="coordinateReferenceSystem" class="java.lang.String">EPSG:25832</attribute>
+        <attribute name="endDate" class="java.lang.String">2025-06-26</attribute>
+        <attribute name="startDate" class="java.lang.String">2025-06-26</attribute>
+    </attributes>
+
+    <transitStops>
+        <stopFacility id="de:11000:900001201_SuburbanRailway" x="794590.57" y="5829552.8"
+            linkRefId="pt_de:11000:900001201_SuburbanRailway" name="S+U Westhafen (Berlin)"
+            stopAreaId="de:11000:900001201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900003102_SuburbanRailway" x="794954.62" y="5827759.55"
+            linkRefId="pt_de:11000:900003102_SuburbanRailway" name="S Bellevue (Berlin)"
+            stopAreaId="de:11000:900003102" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900003103_SuburbanRailway" x="794208.21" y="5827098.02"
+            linkRefId="pt_de:11000:900003103_SuburbanRailway" name="S Tiergarten (Berlin)"
+            stopAreaId="de:11000:900003103" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900003201_SuburbanRailway" x="796361.3" y="5828424.84"
+            linkRefId="pt_de:11000:900003201_SuburbanRailway" name="S+U Berlin Hauptbahnhof"
+            stopAreaId="de:11000:900003201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900007102_G_SuburbanRailway" x="797589.32" y="5831195.77"
+            linkRefId="pt_de:11000:900007102_G_SuburbanRailway"
+            name="S+U Gesundbrunnen Bhf (Berlin)" stopAreaId="de:11000:900007102_G"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900007104_SuburbanRailway" x="797543.29" y="5829298.44"
+            linkRefId="pt_de:11000:900007104_SuburbanRailway" name="S Nordbahnhof (Berlin)"
+            stopAreaId="de:11000:900007104" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900008101_SuburbanRailway" x="796906.56" y="5830659.66"
+            linkRefId="pt_de:11000:900008101_SuburbanRailway" name="S Humboldthain (Berlin)"
+            stopAreaId="de:11000:900008101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900009104_SuburbanRailway" x="796128.11" y="5830407.02"
+            linkRefId="pt_de:11000:900009104_SuburbanRailway" name="S+U Wedding (Berlin)"
+            stopAreaId="de:11000:900009104" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900012101_SuburbanRailway" x="797323.51" y="5826075.51"
+            linkRefId="pt_de:11000:900012101_SuburbanRailway" name="S Anhalter Bahnhof (Berlin)"
+            stopAreaId="de:11000:900012101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900020201_SuburbanRailway" x="791579.17" y="5828719.04"
+            linkRefId="pt_de:11000:900020201_SuburbanRailway" name="S+U Jungfernheide Bhf (Berlin)"
+            stopAreaId="de:11000:900020201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900020202_SuburbanRailway" x="793591.56" y="5829285.29"
+            linkRefId="pt_de:11000:900020202_SuburbanRailway" name="S Beusselstr. (Berlin)"
+            stopAreaId="de:11000:900020202" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900023201_SuburbanRailway" x="793939.74" y="5826257.73"
+            linkRefId="pt_de:11000:900023201_SuburbanRailway"
+            name="S+U Zoologischer Garten Bhf (Berlin)" stopAreaId="de:11000:900023201"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900024101_SuburbanRailway" x="792097.94" y="5825912.91"
+            linkRefId="pt_de:11000:900024101_SuburbanRailway" name="S Charlottenburg Bhf (Berlin)"
+            stopAreaId="de:11000:900024101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900024102_SuburbanRailway" x="790758.41" y="5825405.44"
+            linkRefId="pt_de:11000:900024102_SuburbanRailway" name="S Westkreuz (Berlin)"
+            stopAreaId="de:11000:900024102" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900024106_SuburbanRailway" x="790659.95" y="5826136.67"
+            linkRefId="pt_de:11000:900024106_SuburbanRailway" name="S Messe Nord/ZOB (Berlin)"
+            stopAreaId="de:11000:900024106" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900024203_SuburbanRailway" x="793085.52" y="5825992.96"
+            linkRefId="pt_de:11000:900024203_SuburbanRailway" name="S Savignyplatz (Berlin)"
+            stopAreaId="de:11000:900024203" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900025321_SuburbanRailway" x="787875.71" y="5826363.84"
+            linkRefId="pt_de:11000:900025321_SuburbanRailway" name="S Olympiastadion (Berlin)"
+            stopAreaId="de:11000:900025321" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900025423_SuburbanRailway" x="789827.29" y="5825068.32"
+            linkRefId="pt_de:11000:900025423_SuburbanRailway" name="S Messe Süd (Berlin)"
+            stopAreaId="de:11000:900025423" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900025424_SuburbanRailway" x="786840.73" y="5826194.27"
+            linkRefId="pt_de:11000:900025424_SuburbanRailway" name="S Pichelsberg (Berlin)"
+            stopAreaId="de:11000:900025424" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900026105_SuburbanRailway" x="789048.92" y="5826053.58"
+            linkRefId="pt_de:11000:900026105_SuburbanRailway" name="S Heerstr. (Berlin)"
+            stopAreaId="de:11000:900026105" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900026207_SuburbanRailway" x="790648.4" y="5827272.07"
+            linkRefId="pt_de:11000:900026207_SuburbanRailway" name="S Westend (Berlin)"
+            stopAreaId="de:11000:900026207" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900029101_SuburbanRailway" x="784651.99" y="5828802.61"
+            linkRefId="pt_de:11000:900029101_SuburbanRailway" name="S Spandau Bhf (Berlin)"
+            stopAreaId="de:11000:900029101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900030202_SuburbanRailway" x="785459.67" y="5828538.99"
+            linkRefId="pt_de:11000:900030202_SuburbanRailway" name="S Stresow (Berlin)"
+            stopAreaId="de:11000:900030202" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900040101_SuburbanRailway" x="791214.59" y="5824868.49"
+            linkRefId="pt_de:11000:900040101_SuburbanRailway" name="S Halensee (Berlin)"
+            stopAreaId="de:11000:900040101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900044101_SuburbanRailway" x="791919.79" y="5824088.75"
+            linkRefId="pt_de:11000:900044101_SuburbanRailway" name="S Hohenzollerndamm (Berlin)"
+            stopAreaId="de:11000:900044101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900044202_SuburbanRailway" x="793978.95" y="5822986.74"
+            linkRefId="pt_de:11000:900044202_SuburbanRailway" name="S+U Bundesplatz (Berlin)"
+            stopAreaId="de:11000:900044202" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900045102_SuburbanRailway" x="792763.09" y="5823178.47"
+            linkRefId="pt_de:11000:900045102_SuburbanRailway" name="S+U Heidelberger Platz (Berlin)"
+            stopAreaId="de:11000:900045102" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900048101_SuburbanRailway" x="789252.15" y="5823896.79"
+            linkRefId="pt_de:11000:900048101_SuburbanRailway" name="S Grunewald (Berlin)"
+            stopAreaId="de:11000:900048101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900049201_SuburbanRailway" x="789432.47" y="5817508.06"
+            linkRefId="pt_de:11000:900049201_SuburbanRailway" name="S Zehlendorf (Berlin)"
+            stopAreaId="de:11000:900049201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900049202_SuburbanRailway" x="790474.81" y="5818169.55"
+            linkRefId="pt_de:11000:900049202_SuburbanRailway" name="S Sundgauer Str. (Berlin)"
+            stopAreaId="de:11000:900049202" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900050301_SuburbanRailway" x="787711.36" y="5818052.14"
+            linkRefId="pt_de:11000:900050301_SuburbanRailway" name="S Mexikoplatz (Berlin)"
+            stopAreaId="de:11000:900050301" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900050355_SuburbanRailway" x="786482.35" y="5818355.27"
+            linkRefId="pt_de:11000:900050355_SuburbanRailway" name="S Schlachtensee (Berlin)"
+            stopAreaId="de:11000:900050355" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900052201_SuburbanRailway" x="785080.97" y="5817342.98"
+            linkRefId="pt_de:11000:900052201_SuburbanRailway" name="S Nikolassee (Berlin)"
+            stopAreaId="de:11000:900052201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900053301_G_SuburbanRailway" x="784189.75" y="5816160.92"
+            linkRefId="pt_de:11000:900053301_G_SuburbanRailway" name="S Wannsee Bhf (Berlin)"
+            stopAreaId="de:11000:900053301_G" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900054104_SuburbanRailway" x="795487.48" y="5823251.69"
+            linkRefId="pt_de:11000:900054104_SuburbanRailway" name="S Schöneberg (Berlin)"
+            stopAreaId="de:11000:900054104" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900054105_SuburbanRailway" x="794785.27" y="5823089.77"
+            linkRefId="pt_de:11000:900054105_SuburbanRailway" name="S+U Innsbrucker Platz (Berlin)"
+            stopAreaId="de:11000:900054105" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900057102_SuburbanRailway" x="796475.64" y="5824767.58"
+            linkRefId="pt_de:11000:900057102_SuburbanRailway"
+            name="S+U Yorckstr. (Großgörschenstr.) (Berlin)" stopAreaId="de:11000:900057102"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900057104_SuburbanRailway" x="796064.15" y="5824085.6"
+            linkRefId="pt_de:11000:900057104_SuburbanRailway" name="S Julius-Leber-Brücke (Berlin)"
+            stopAreaId="de:11000:900057104" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900058101_SuburbanRailway" x="796401.42" y="5822965.8"
+            linkRefId="pt_de:11000:900058101_SuburbanRailway" name="S Südkreuz Bhf (Berlin)"
+            stopAreaId="de:11000:900058101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900058102_SuburbanRailway" x="795906.76" y="5821121.0"
+            linkRefId="pt_de:11000:900058102_SuburbanRailway" name="S Priesterweg (Berlin)"
+            stopAreaId="de:11000:900058102" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900058103_SuburbanRailway" x="796769.03" y="5824678.04"
+            linkRefId="pt_de:11000:900058103_SuburbanRailway" name="S+U Yorckstr. (Berlin)"
+            stopAreaId="de:11000:900058103" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900060101_SuburbanRailway" x="794815.2" y="5822235.07"
+            linkRefId="pt_de:11000:900060101_SuburbanRailway" name="S Friedenau (Berlin)"
+            stopAreaId="de:11000:900060101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900062202_SuburbanRailway" x="793637.98" y="5820485.75"
+            linkRefId="pt_de:11000:900062202_SuburbanRailway" name="S+U Rathaus Steglitz (Berlin)"
+            stopAreaId="de:11000:900062202" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900063101_SuburbanRailway" x="794264.18" y="5821413.6"
+            linkRefId="pt_de:11000:900063101_SuburbanRailway" name="S Feuerbachstr. (Berlin)"
+            stopAreaId="de:11000:900063101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900063452_SuburbanRailway" x="795812.88" y="5819809.04"
+            linkRefId="pt_de:11000:900063452_SuburbanRailway" name="S Südende (Berlin)"
+            stopAreaId="de:11000:900063452" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900064201_SuburbanRailway" x="793004.69" y="5815405.92"
+            linkRefId="pt_de:11000:900064201_SuburbanRailway" name="S Lichterfelde Süd (Berlin)"
+            stopAreaId="de:11000:900064201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900064256_SuburbanRailway" x="793329.62" y="5816391.44"
+            linkRefId="pt_de:11000:900064256_SuburbanRailway" name="S Osdorfer Str. (Berlin)"
+            stopAreaId="de:11000:900064256" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900064301_SuburbanRailway" x="794201.38" y="5817680.83"
+            linkRefId="pt_de:11000:900064301_SuburbanRailway" name="S Lichterfelde Ost Bhf (Berlin)"
+            stopAreaId="de:11000:900064301" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900066101_SuburbanRailway" x="791734.6" y="5819007.42"
+            linkRefId="pt_de:11000:900066101_SuburbanRailway" name="S Lichterfelde West (Berlin)"
+            stopAreaId="de:11000:900066101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900066102_SuburbanRailway" x="792658.34" y="5819596.68"
+            linkRefId="pt_de:11000:900066102_SuburbanRailway" name="S Botanischer Garten (Berlin)"
+            stopAreaId="de:11000:900066102" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900067221_SuburbanRailway" x="795087.94" y="5818710.72"
+            linkRefId="pt_de:11000:900067221_SuburbanRailway" name="S Lankwitz (Berlin)"
+            stopAreaId="de:11000:900067221" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900068201_SuburbanRailway" x="797752.36" y="5822471.8"
+            linkRefId="pt_de:11000:900068201_SuburbanRailway" name="S+U Tempelhof (Berlin)"
+            stopAreaId="de:11000:900068201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900068301_SuburbanRailway" x="796306.78" y="5819807.64"
+            linkRefId="pt_de:11000:900068301_SuburbanRailway" name="S Attilastr. (Berlin)"
+            stopAreaId="de:11000:900068301" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900072101_SuburbanRailway" x="798054.33" y="5815708.77"
+            linkRefId="pt_de:11000:900072101_SuburbanRailway" name="S Buckower Chaussee (Berlin)"
+            stopAreaId="de:11000:900072101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900073101_SuburbanRailway" x="797396.26" y="5817234.98"
+            linkRefId="pt_de:11000:900073101_SuburbanRailway" name="S Marienfelde (Berlin)"
+            stopAreaId="de:11000:900073101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900074201_SuburbanRailway" x="799127.83" y="5813178.33"
+            linkRefId="pt_de:11000:900074201_SuburbanRailway" name="S Lichtenrade (Berlin)"
+            stopAreaId="de:11000:900074201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900074202_SuburbanRailway" x="798542.82" y="5814499.05"
+            linkRefId="pt_de:11000:900074202_SuburbanRailway" name="S Schichauweg (Berlin)"
+            stopAreaId="de:11000:900074202" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900077106_SuburbanRailway" x="802568.62" y="5822986.04"
+            linkRefId="pt_de:11000:900077106_SuburbanRailway" name="S Sonnenallee (Berlin)"
+            stopAreaId="de:11000:900077106" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900077155_SuburbanRailway" x="803434.95" y="5822669.91"
+            linkRefId="pt_de:11000:900077155_SuburbanRailway" name="S Köllnische Heide (Berlin)"
+            stopAreaId="de:11000:900077155" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900078201_SuburbanRailway" x="801745.81" y="5822545.0"
+            linkRefId="pt_de:11000:900078201_SuburbanRailway" name="S+U Neukölln (Berlin)"
+            stopAreaId="de:11000:900078201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900079221_SuburbanRailway" x="800946.85" y="5822294.79"
+            linkRefId="pt_de:11000:900079221_SuburbanRailway" name="S+U Hermannstr. (Berlin)"
+            stopAreaId="de:11000:900079221" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900084101_SuburbanRailway" x="795495.37" y="5834676.35"
+            linkRefId="pt_de:11000:900084101_SuburbanRailway" name="S Wilhelmsruh (Berlin)"
+            stopAreaId="de:11000:900084101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900085105_SuburbanRailway" x="794779.58" y="5834200.2"
+            linkRefId="pt_de:11000:900085105_SuburbanRailway" name="S Alt-Reinickendorf (Berlin)"
+            stopAreaId="de:11000:900085105" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900085201_SuburbanRailway" x="796845.84" y="5833622.34"
+            linkRefId="pt_de:11000:900085201_SuburbanRailway" name="S Schönholz (Berlin)"
+            stopAreaId="de:11000:900085201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900089303_SuburbanRailway" x="790556.48" y="5835101.01"
+            linkRefId="pt_de:11000:900089303_SuburbanRailway" name="S Tegel (Berlin)"
+            stopAreaId="de:11000:900089303" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900091203_SuburbanRailway" x="786222.12" y="5838899.44"
+            linkRefId="pt_de:11000:900091203_SuburbanRailway" name="S Heiligensee (Berlin)"
+            stopAreaId="de:11000:900091203" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900091205_SuburbanRailway" x="787425.49" y="5837682.56"
+            linkRefId="pt_de:11000:900091205_SuburbanRailway" name="S Schulzendorf (Berlin)"
+            stopAreaId="de:11000:900091205" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900092201_SuburbanRailway" x="790301.72" y="5840014.43"
+            linkRefId="pt_de:11000:900092201_SuburbanRailway" name="S Frohnau (Berlin)"
+            stopAreaId="de:11000:900092201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900093201_SuburbanRailway" x="791572.39" y="5838420.34"
+            linkRefId="pt_de:11000:900093201_SuburbanRailway" name="S Hermsdorf (Berlin)"
+            stopAreaId="de:11000:900093201" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900094101_SuburbanRailway" x="792556.97" y="5837250.52"
+            linkRefId="pt_de:11000:900094101_SuburbanRailway" name="S Waidmannslust (Berlin)"
+            stopAreaId="de:11000:900094101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900096101_SuburbanRailway" x="793504.34" y="5836278.62"
+            linkRefId="pt_de:11000:900096101_SuburbanRailway" name="S+U Wittenau (Berlin)"
+            stopAreaId="de:11000:900096101" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900096405_SuburbanRailway" x="792476.86" y="5834051.78"
+            linkRefId="pt_de:11000:900096405_SuburbanRailway" name="S Eichborndamm (Berlin)"
+            stopAreaId="de:11000:900096405" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900096458_SuburbanRailway" x="793271.98" y="5834136.22"
+            linkRefId="pt_de:11000:900096458_SuburbanRailway"
+            name="S+U Karl-Bonhoeffer-Nervenklinik (Berlin)" stopAreaId="de:11000:900096458"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100001_SuburbanRailway" x="797600.78" y="5827966.57"
+            linkRefId="pt_de:11000:900100001_SuburbanRailway" name="S+U Friedrichstr. Bhf (Berlin)"
+            stopAreaId="de:11000:900100001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100002_SuburbanRailway" x="798622.64" y="5828285.37"
+            linkRefId="pt_de:11000:900100002_SuburbanRailway" name="S Hackescher Markt (Berlin)"
+            stopAreaId="de:11000:900100002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100003_SuburbanRailway" x="799224.58" y="5828194.67"
+            linkRefId="pt_de:11000:900100003_SuburbanRailway" name="S+U Alexanderplatz Bhf (Berlin)"
+            stopAreaId="de:11000:900100003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100004_SuburbanRailway" x="799833.52" y="5827414.55"
+            linkRefId="pt_de:11000:900100004_SuburbanRailway" name="S+U Jannowitzbrücke (Berlin)"
+            stopAreaId="de:11000:900100004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100007_SuburbanRailway" x="797962.36" y="5828537.81"
+            linkRefId="pt_de:11000:900100007_SuburbanRailway" name="S Oranienburger Str. (Berlin)"
+            stopAreaId="de:11000:900100007" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100020_SuburbanRailway" x="796947.54" y="5826726.59"
+            linkRefId="pt_de:11000:900100020_SuburbanRailway"
+            name="S+U Potsdamer Platz Bhf (Berlin)" stopAreaId="de:11000:900100020"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900100025_SuburbanRailway" x="797253.98" y="5827512.51"
+            linkRefId="pt_de:11000:900100025_SuburbanRailway" name="S+U Brandenburger Tor (Berlin)"
+            stopAreaId="de:11000:900100025" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900110001_SuburbanRailway" x="799304.01" y="5831295.89"
+            linkRefId="pt_de:11000:900110001_SuburbanRailway" name="S+U Schönhauser Allee (Berlin)"
+            stopAreaId="de:11000:900110001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900110002_SuburbanRailway" x="800058.41" y="5830838.24"
+            linkRefId="pt_de:11000:900110002_SuburbanRailway" name="S Prenzlauer Allee (Berlin)"
+            stopAreaId="de:11000:900110002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900110003_SuburbanRailway" x="800987.6" y="5830376.85"
+            linkRefId="pt_de:11000:900110003_SuburbanRailway" name="S Greifswalder Str. (Berlin)"
+            stopAreaId="de:11000:900110003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900110004_SuburbanRailway" x="802127.91" y="5829243.08"
+            linkRefId="pt_de:11000:900110004_SuburbanRailway" name="S Landsberger Allee (Berlin)"
+            stopAreaId="de:11000:900110004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900110011_SuburbanRailway" x="798081.15" y="5831817.38"
+            linkRefId="pt_de:11000:900110011_SuburbanRailway" name="S Bornholmer Str. (Berlin)"
+            stopAreaId="de:11000:900110011" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900110012_SuburbanRailway" x="802858.74" y="5828657.27"
+            linkRefId="pt_de:11000:900110012_SuburbanRailway" name="S Storkower Str. (Berlin)"
+            stopAreaId="de:11000:900110012" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900120001_SuburbanRailway" x="803541.8" y="5827776.16"
+            linkRefId="pt_de:11000:900120001_SuburbanRailway" name="S+U Frankfurter Allee (Berlin)"
+            stopAreaId="de:11000:900120001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900120003_SuburbanRailway" x="803247.52" y="5826407.76"
+            linkRefId="pt_de:11000:900120003_SuburbanRailway" name="S Ostkreuz Bhf (Berlin)"
+            stopAreaId="de:11000:900120003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900120004_SuburbanRailway" x="802004.07" y="5826647.57"
+            linkRefId="pt_de:11000:900120004_SuburbanRailway" name="S+U Warschauer Str. (Berlin)"
+            stopAreaId="de:11000:900120004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900120005_SuburbanRailway" x="800934.46" y="5827071.85"
+            linkRefId="pt_de:11000:900120005_SuburbanRailway" name="S Ostbahnhof (Berlin)"
+            stopAreaId="de:11000:900120005" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900130001_SuburbanRailway" x="800073.38" y="5834557.01"
+            linkRefId="pt_de:11000:900130001_SuburbanRailway" name="S Pankow-Heinersdorf (Berlin)"
+            stopAreaId="de:11000:900130001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900130002_SuburbanRailway" x="798861.26" y="5833159.55"
+            linkRefId="pt_de:11000:900130002_SuburbanRailway" name="S+U Pankow (Berlin)"
+            stopAreaId="de:11000:900130002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900130003_SuburbanRailway" x="797628.46" y="5832979.45"
+            linkRefId="pt_de:11000:900130003_SuburbanRailway" name="S Wollankstr. (Berlin)"
+            stopAreaId="de:11000:900130003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900135001_SuburbanRailway" x="803887.49" y="5841235.27"
+            linkRefId="pt_de:11000:900135001_SuburbanRailway" name="S Buch (Berlin)"
+            stopAreaId="de:11000:900135001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900142001_SuburbanRailway" x="800920.64" y="5836092.53"
+            linkRefId="pt_de:11000:900142001_SuburbanRailway" name="S Blankenburg (Berlin)"
+            stopAreaId="de:11000:900142001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900143001_SuburbanRailway" x="802522.7" y="5838853.71"
+            linkRefId="pt_de:11000:900143001_SuburbanRailway" name="S Karow Bhf (Berlin)"
+            stopAreaId="de:11000:900143001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900151001_SuburbanRailway" x="805141.79" y="5834313.02"
+            linkRefId="pt_de:11000:900151001_SuburbanRailway" name="S Wartenberg (Berlin)"
+            stopAreaId="de:11000:900151001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900152001_SuburbanRailway" x="805786.05" y="5833593.72"
+            linkRefId="pt_de:11000:900152001_SuburbanRailway" name="S Hohenschönhausen Bhf (Berlin)"
+            stopAreaId="de:11000:900152001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900152002_SuburbanRailway" x="806683.37" y="5832556.88"
+            linkRefId="pt_de:11000:900152002_SuburbanRailway" name="S Gehrenseestr. (Berlin)"
+            stopAreaId="de:11000:900152002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900160001_SuburbanRailway" x="803939.3" y="5826222.32"
+            linkRefId="pt_de:11000:900160001_SuburbanRailway" name="S Rummelsburg (Berlin)"
+            stopAreaId="de:11000:900160001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900160002_SuburbanRailway" x="805279.97" y="5825495.1"
+            linkRefId="pt_de:11000:900160002_SuburbanRailway"
+            name="S Betriebsbahnhof Rummelsburg (Berlin)" stopAreaId="de:11000:900160002"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900160003_SuburbanRailway" x="804374.9" y="5826535.7"
+            linkRefId="pt_de:11000:900160003_SuburbanRailway" name="S Nöldnerplatz (Berlin)"
+            stopAreaId="de:11000:900160003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900160004_SuburbanRailway" x="805184.06" y="5827302.34"
+            linkRefId="pt_de:11000:900160004_SuburbanRailway" name="S+U Lichtenberg Bhf (Berlin)"
+            stopAreaId="de:11000:900160004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900162001_SuburbanRailway" x="807361.02" y="5824126.77"
+            linkRefId="pt_de:11000:900162001_SuburbanRailway" name="S Karlshorst (Berlin)"
+            stopAreaId="de:11000:900162001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900170001_SuburbanRailway" x="807878.98" y="5831157.9"
+            linkRefId="pt_de:11000:900170001_SuburbanRailway" name="S Marzahn (Berlin)"
+            stopAreaId="de:11000:900170001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900170002_SuburbanRailway" x="808270.48" y="5832016.8"
+            linkRefId="pt_de:11000:900170002_SuburbanRailway"
+            name="S Raoul-Wallenberg-Str. (Berlin)" stopAreaId="de:11000:900170002"
+            isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900170003_SuburbanRailway" x="808630.58" y="5832822.55"
+            linkRefId="pt_de:11000:900170003_SuburbanRailway" name="S Mehrower Allee (Berlin)"
+            stopAreaId="de:11000:900170003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900170004_SuburbanRailway" x="809338.87" y="5834384.66"
+            linkRefId="pt_de:11000:900170004_SuburbanRailway" name="S Ahrensfelde Bhf (Berlin)"
+            stopAreaId="de:11000:900170004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900170005_SuburbanRailway" x="807554.46" y="5830287.3"
+            linkRefId="pt_de:11000:900170005_SuburbanRailway" name="S Poelchaustr. (Berlin)"
+            stopAreaId="de:11000:900170005" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900171001_SuburbanRailway" x="809124.57" y="5827870.71"
+            linkRefId="pt_de:11000:900171001_SuburbanRailway" name="S Biesdorf (Berlin)"
+            stopAreaId="de:11000:900171001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900171002_SuburbanRailway" x="806647.56" y="5827822.15"
+            linkRefId="pt_de:11000:900171002_SuburbanRailway" name="S Friedrichsfelde Ost (Berlin)"
+            stopAreaId="de:11000:900171002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900171003_SuburbanRailway" x="807685.77" y="5829341.09"
+            linkRefId="pt_de:11000:900171003_SuburbanRailway" name="S Springpfuhl (Berlin)"
+            stopAreaId="de:11000:900171003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900175001_SuburbanRailway" x="810403.35" y="5827915.03"
+            linkRefId="pt_de:11000:900175001_SuburbanRailway" name="S+U Wuhletal (Berlin)"
+            stopAreaId="de:11000:900175001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900175002_SuburbanRailway" x="811443.5" y="5827914.12"
+            linkRefId="pt_de:11000:900175002_SuburbanRailway" name="S Kaulsdorf (Berlin)"
+            stopAreaId="de:11000:900175002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900176001_SuburbanRailway" x="812806.95" y="5828010.99"
+            linkRefId="pt_de:11000:900176001_SuburbanRailway" name="S Mahlsdorf Bhf (Berlin)"
+            stopAreaId="de:11000:900176001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900180001_SuburbanRailway" x="811211.93" y="5821928.0"
+            linkRefId="pt_de:11000:900180001_SuburbanRailway" name="S Köpenick (Berlin)"
+            stopAreaId="de:11000:900180001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900180002_SuburbanRailway" x="809291.52" y="5822923.87"
+            linkRefId="pt_de:11000:900180002_SuburbanRailway" name="S Wuhlheide (Berlin)"
+            stopAreaId="de:11000:900180002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900180003_SuburbanRailway" x="809922.18" y="5820560.98"
+            linkRefId="pt_de:11000:900180003_SuburbanRailway" name="S Spindlersfeld (Berlin)"
+            stopAreaId="de:11000:900180003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900182001_SuburbanRailway" x="812685.52" y="5821943.4"
+            linkRefId="pt_de:11000:900182001_SuburbanRailway" name="S Hirschgarten (Berlin)"
+            stopAreaId="de:11000:900182001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900182002_SuburbanRailway" x="814053.07" y="5821972.09"
+            linkRefId="pt_de:11000:900182002_SuburbanRailway" name="S Friedrichshagen (Berlin)"
+            stopAreaId="de:11000:900182002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900183001_SuburbanRailway" x="818625.36" y="5821626.12"
+            linkRefId="pt_de:11000:900183001_SuburbanRailway" name="S Rahnsdorf (Berlin)"
+            stopAreaId="de:11000:900183001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900183002_SuburbanRailway" x="820908.61" y="5820308.49"
+            linkRefId="pt_de:11000:900183002_SuburbanRailway" name="S Wilhelmshagen (Berlin)"
+            stopAreaId="de:11000:900183002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900186001_SuburbanRailway" x="811026.2" y="5816758.53"
+            linkRefId="pt_de:11000:900186001_SuburbanRailway" name="S Grünau (Berlin)"
+            stopAreaId="de:11000:900186001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900190001_SuburbanRailway" x="802824.25" y="5825317.6"
+            linkRefId="pt_de:11000:900190001_SuburbanRailway" name="S Treptower Park (Berlin)"
+            stopAreaId="de:11000:900190001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900191001_SuburbanRailway" x="804920.0" y="5822534.66"
+            linkRefId="pt_de:11000:900191001_SuburbanRailway" name="S Baumschulenweg (Berlin)"
+            stopAreaId="de:11000:900191001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900191002_SuburbanRailway" x="803727.96" y="5823668.9"
+            linkRefId="pt_de:11000:900191002_SuburbanRailway" name="S Plänterwald (Berlin)"
+            stopAreaId="de:11000:900191002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900192001_SuburbanRailway" x="806367.15" y="5821186.2"
+            linkRefId="pt_de:11000:900192001_SuburbanRailway" name="S Schöneweide Bhf (Berlin)"
+            stopAreaId="de:11000:900192001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900192002_SuburbanRailway" x="808304.58" y="5821051.66"
+            linkRefId="pt_de:11000:900192002_SuburbanRailway" name="S Oberspree (Berlin)"
+            stopAreaId="de:11000:900192002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900193001_SuburbanRailway" x="807397.5" y="5820344.49"
+            linkRefId="pt_de:11000:900193001_SuburbanRailway" name="S Johannisthal (Berlin)"
+            stopAreaId="de:11000:900193001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900193002_SuburbanRailway" x="808644.62" y="5819111.46"
+            linkRefId="pt_de:11000:900193002_SuburbanRailway" name="S Adlershof (Berlin)"
+            stopAreaId="de:11000:900193002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900195510_SuburbanRailway" x="810037.3" y="5816124.3"
+            linkRefId="pt_de:11000:900195510_SuburbanRailway" name="S Altglienicke (Berlin)"
+            stopAreaId="de:11000:900195510" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:11000:900196001_SuburbanRailway" x="808942.89" y="5815166.42"
+            linkRefId="pt_de:11000:900196001_SuburbanRailway" name="S Grünbergallee (Berlin)"
+            stopAreaId="de:11000:900196001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12054:900230000_SuburbanRailway" x="778453.7" y="5812459.82"
+            linkRefId="pt_de:12054:900230000_SuburbanRailway" name="S Babelsberg"
+            stopAreaId="de:12054:900230000" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12054:900230003_SuburbanRailway" x="780802.0" y="5812939.44"
+            linkRefId="pt_de:12054:900230003_SuburbanRailway" name="S Griebnitzsee Bhf"
+            stopAreaId="de:12054:900230003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12054:900230999_SuburbanRailway" x="776682.0" y="5812397.3"
+            linkRefId="pt_de:12054:900230999_SuburbanRailway" name="S Potsdam Hauptbahnhof"
+            stopAreaId="de:12054:900230999" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12060:900350160_G_SuburbanRailway" x="810365.49" y="5846082.91"
+            linkRefId="pt_de:12060:900350160_G_SuburbanRailway" name="S Bernau Bhf"
+            stopAreaId="de:12060:900350160_G" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12060:900350160_G_SuburbanRailway_rail" x="810375.01" y="5846072.92"
+            linkRefId="pt_de:12060:900350160_G_SuburbanRailway_rail" name="S Bernau Bhf"
+            stopAreaId="de:12060:900350160_G" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12060:900350161_SuburbanRailway" x="808613.8" y="5845176.28"
+            linkRefId="pt_de:12060:900350161_SuburbanRailway" name="S Bernau-Friedenstal"
+            stopAreaId="de:12060:900350161" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12060:900350162_SuburbanRailway" x="805266.18" y="5842751.46"
+            linkRefId="pt_de:12060:900350162_SuburbanRailway" name="S Röntgental"
+            stopAreaId="de:12060:900350162" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12060:900350163_SuburbanRailway" x="806585.18" y="5844087.17"
+            linkRefId="pt_de:12060:900350163_SuburbanRailway" name="S Zepernick"
+            stopAreaId="de:12060:900350163" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260001_SuburbanRailway_rail" x="815760.94" y="5804139.37"
+            linkRefId="pt_de:12061:900260001_SuburbanRailway_rail" name="S Königs Wusterhausen Bhf"
+            stopAreaId="de:12061:900260001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260002_SuburbanRailway" x="815753.25" y="5806670.15"
+            linkRefId="pt_de:12061:900260002_SuburbanRailway" name="S Wildau"
+            stopAreaId="de:12061:900260002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260003_SuburbanRailway" x="815111.97" y="5809900.52"
+            linkRefId="pt_de:12061:900260003_SuburbanRailway" name="S Zeuthen"
+            stopAreaId="de:12061:900260003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260004_SuburbanRailway" x="814127.28" y="5812359.38"
+            linkRefId="pt_de:12061:900260004_SuburbanRailway" name="S Eichwalde"
+            stopAreaId="de:12061:900260004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260005_SuburbanRailway" x="807034.17" y="5814112.54"
+            linkRefId="pt_de:12061:900260005_SuburbanRailway" name="S Schönefeld (bei Berlin) Bhf"
+            stopAreaId="de:12061:900260005" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260009_G_SuburbanRailway" x="806892.67" y="5811119.6"
+            linkRefId="pt_de:12061:900260009_G_SuburbanRailway" name="Flughafen BER"
+            stopAreaId="de:12061:900260009_G" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12061:900260080_G_SuburbanRailway" x="803820.7" y="5811403.03"
+            linkRefId="pt_de:12061:900260080_G_SuburbanRailway" name="S Waßmannsdorf"
+            stopAreaId="de:12061:900260080_G" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12062:900415345_SuburbanRailway_rail" x="794143.47" y="5723244.69"
+            linkRefId="pt_de:12062:900415345_SuburbanRailway_rail" name="Falkenberg/E., Bahnhof"
+            stopAreaId="de:12062:900415345" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12062:900416072_SuburbanRailway_bus" x="787763.77" y="5722481.08"
+            linkRefId="pt_de:12062:900416072_SuburbanRailway_bus" name="Rehfeld (EE), Bahnhof"
+            stopAreaId="de:12062:900416072" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320001_SuburbanRailway" x="832412.77" y="5838017.78"
+            linkRefId="pt_de:12064:900320001_SuburbanRailway" name="S Strausberg Nord"
+            stopAreaId="de:12064:900320001" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320002_SuburbanRailway" x="831126.72" y="5836408.01"
+            linkRefId="pt_de:12064:900320002_SuburbanRailway" name="S Strausberg Stadt"
+            stopAreaId="de:12064:900320002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320003_SuburbanRailway" x="829888.04" y="5833188.72"
+            linkRefId="pt_de:12064:900320003_SuburbanRailway" name="S Hegermühle"
+            stopAreaId="de:12064:900320003" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320004_SuburbanRailway" x="827755.54" y="5831217.55"
+            linkRefId="pt_de:12064:900320004_SuburbanRailway" name="S Strausberg Bhf"
+            stopAreaId="de:12064:900320004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320005_SuburbanRailway" x="824806.64" y="5830649.72"
+            linkRefId="pt_de:12064:900320005_SuburbanRailway" name="S Petershagen Nord"
+            stopAreaId="de:12064:900320005" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320006_SuburbanRailway" x="822867.22" y="5830222.01"
+            linkRefId="pt_de:12064:900320006_SuburbanRailway" name="S Fredersdorf"
+            stopAreaId="de:12064:900320006" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320007_SuburbanRailway" x="818833.89" y="5829352.08"
+            linkRefId="pt_de:12064:900320007_SuburbanRailway" name="S Neuenhagen (b Berlin)"
+            stopAreaId="de:12064:900320007" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320008_SuburbanRailway" x="817062.29" y="5828938.71"
+            linkRefId="pt_de:12064:900320008_SuburbanRailway" name="S Hoppegarten"
+            stopAreaId="de:12064:900320008" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12064:900320026_SuburbanRailway" x="815272.62" y="5828552.41"
+            linkRefId="pt_de:12064:900320026_SuburbanRailway" name="S Birkenstein"
+            stopAreaId="de:12064:900320026" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200000_SuburbanRailway" x="784555.68" y="5840248.52"
+            linkRefId="pt_de:12065:900200000_SuburbanRailway" name="S Hennigsdorf Bhf"
+            stopAreaId="de:12065:900200000" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200005_SuburbanRailway" x="786687.23" y="5853372.02"
+            linkRefId="pt_de:12065:900200005_SuburbanRailway" name="S Oranienburg Bhf"
+            stopAreaId="de:12065:900200005" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200006_SuburbanRailway" x="787759.35" y="5852007.64"
+            linkRefId="pt_de:12065:900200006_SuburbanRailway" name="S Lehnitz"
+            stopAreaId="de:12065:900200006" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200007_SuburbanRailway" x="788796.71" y="5849207.66"
+            linkRefId="pt_de:12065:900200007_SuburbanRailway" name="S Borgsdorf"
+            stopAreaId="de:12065:900200007" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200008_SuburbanRailway" x="789805.59" y="5846270.69"
+            linkRefId="pt_de:12065:900200008_SuburbanRailway" name="S Birkenwerder Bhf"
+            stopAreaId="de:12065:900200008" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200008_SuburbanRailway_bus" x="789815.61" y="5846272.07"
+            linkRefId="pt_de:12065:900200008_SuburbanRailway_bus" name="S Birkenwerder Bhf"
+            stopAreaId="de:12065:900200008" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200009_SuburbanRailway" x="789827.84" y="5844039.6"
+            linkRefId="pt_de:12065:900200009_SuburbanRailway" name="S Hohen Neuendorf"
+            stopAreaId="de:12065:900200009" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200011_SuburbanRailway" x="792077.47" y="5844334.41"
+            linkRefId="pt_de:12065:900200011_SuburbanRailway" name="S Bergfelde"
+            stopAreaId="de:12065:900200011" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200012_SuburbanRailway" x="793472.32" y="5843810.2"
+            linkRefId="pt_de:12065:900200012_SuburbanRailway" name="S Schönfließ"
+            stopAreaId="de:12065:900200012" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12065:900200013_SuburbanRailway" x="796623.69" y="5842900.73"
+            linkRefId="pt_de:12065:900200013_SuburbanRailway" name="S Mühlenbeck-Mönchmühle"
+            stopAreaId="de:12065:900200013" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12067:900310004_SuburbanRailway" x="822926.43" y="5819448.44"
+            linkRefId="pt_de:12067:900310004_SuburbanRailway" name="S Erkner Bhf"
+            stopAreaId="de:12067:900310004" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12069:900220114_SuburbanRailway" x="790918.37" y="5813797.53"
+            linkRefId="pt_de:12069:900220114_SuburbanRailway" name="S Teltow Stadt"
+            stopAreaId="de:12069:900220114" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12070:900216026_SuburbanRailway_bus_rail" x="685353.63" y="5876340.92"
+            linkRefId="pt_de:12070:900216026_SuburbanRailway_bus_rail" name="Wittenberge, Bahnhof"
+            stopAreaId="de:12070:900216026" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12070:900216026_SuburbanRailway_rail" x="685353.72" y="5876270.65"
+            linkRefId="pt_de:12070:900216026_SuburbanRailway_rail" name="Wittenberge, Bahnhof"
+            stopAreaId="de:12070:900216026" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12072:900245002_SuburbanRailway" x="778089.74" y="5768266.81"
+            linkRefId="pt_de:12072:900245002_SuburbanRailway" name="Jüterbog, Bahnhof"
+            stopAreaId="de:12072:900245002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12072:900245002_SuburbanRailway_rail" x="778233.93" y="5768486.37"
+            linkRefId="pt_de:12072:900245002_SuburbanRailway_rail" name="Jüterbog, Bahnhof"
+            stopAreaId="de:12072:900245002" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12072:900245017_SuburbanRailway_rail" x="773269.43" y="5764947.27"
+            linkRefId="pt_de:12072:900245017_SuburbanRailway_rail" name="Niedergörsdorf, Bahnhof"
+            stopAreaId="de:12072:900245017" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12072:900245018_SuburbanRailway_rail" x="767670.77" y="5763257.46"
+            linkRefId="pt_de:12072:900245018_SuburbanRailway_rail" name="Blönsdorf, Bahnhof"
+            stopAreaId="de:12072:900245018" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12072:900245027_SuburbanRailway" x="800752.94" y="5807870.41"
+            linkRefId="pt_de:12072:900245027_SuburbanRailway" name="S Blankenfelde (TF) Bhf"
+            stopAreaId="de:12072:900245027" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:12072:900245028_SuburbanRailway" x="800089.34" y="5810314.76"
+            linkRefId="pt_de:12072:900245028_SuburbanRailway" name="S Mahlow"
+            stopAreaId="de:12072:900245028" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+        <stopFacility id="de:15090:8010334_SuburbanRailway_rail" x="693394.18" y="5831024.64"
+            linkRefId="pt_de:15090:8010334_SuburbanRailway_rail" name="Stendal Hbf"
+            stopAreaId="de:15090:8010334" isBlocking="false">
+            <attributes>
+                <attribute name="stopFilter" class="java.lang.String">station_S/U/RE/RB</attribute>
+            </attributes>
+
+        </stopFacility>
+    </transitStops>
+
+    <transitLine id="S47---de:VBB:11000000|S-Bahn|S47:_109" name="S47">
+        <attributes>
+            <attribute name="gtfs_agency_id" class="java.lang.String">8566</attribute>
+            <attribute name="gtfs_route_short_name" class="java.lang.String">S47</attribute>
+            <attribute name="gtfs_route_type" class="java.lang.String">109</attribute>
+        </attributes>
+
+        <transitRoute id="S47---de:VBB:11000000|S-Bahn|S47:_109_0">
+            <attributes>
+                <attribute name="simple_route_type" class="java.lang.String">Suburban Railway</attribute>
+            </attributes>
+
+            <transportMode>Suburban Railway</transportMode>
+            <routeProfile>
+                <stop refId="de:11000:900079221_SuburbanRailway" arrivalOffset="00:00:00"
+                    departureOffset="00:00:00" awaitDeparture="true" />
+                <stop refId="de:11000:900078201_SuburbanRailway" arrivalOffset="00:01:12"
+                    departureOffset="00:01:48" awaitDeparture="true" />
+                <stop refId="de:11000:900077155_SuburbanRailway" arrivalOffset="00:03:48"
+                    departureOffset="00:04:48" awaitDeparture="true" />
+                <stop refId="de:11000:900191001_SuburbanRailway" arrivalOffset="00:06:48"
+                    departureOffset="00:09:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192001_SuburbanRailway" arrivalOffset="00:11:30"
+                    departureOffset="00:12:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192002_SuburbanRailway" arrivalOffset="00:15:18"
+                    departureOffset="00:15:48" awaitDeparture="true" />
+                <stop refId="de:11000:900180003_SuburbanRailway" arrivalOffset="00:18:18"
+                    departureOffset="00:18:18" awaitDeparture="true" />
+            </routeProfile>
+            <route>
+                <link refId="pt_de:11000:900079221_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900079221_SuburbanRailway-pt_de:11000:900078201_SuburbanRailway" />
+                <link refId="pt_de:11000:900078201_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900078201_SuburbanRailway-pt_de:11000:900077155_SuburbanRailway" />
+                <link refId="pt_de:11000:900077155_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900077155_SuburbanRailway-pt_de:11000:900191001_SuburbanRailway" />
+                <link refId="pt_de:11000:900191001_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900191001_SuburbanRailway-pt_de:11000:900192001_SuburbanRailway" />
+                <link refId="pt_de:11000:900192001_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192001_SuburbanRailway-pt_de:11000:900192002_SuburbanRailway" />
+                <link refId="pt_de:11000:900192002_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192002_SuburbanRailway-pt_de:11000:900180003_SuburbanRailway" />
+                <link refId="pt_de:11000:900180003_SuburbanRailway" />
+            </route>
+            <departures>
+                <departure id="2772593417_0" departureTime="09:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_0" />
+                <departure id="2772593420_0" departureTime="05:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_1" />
+                <departure id="2772593421_0" departureTime="06:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_2" />
+                <departure id="2772593422_0" departureTime="06:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_3" />
+                <departure id="2772593423_0" departureTime="06:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_4" />
+                <departure id="2772593424_0" departureTime="07:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_5" />
+                <departure id="2772593425_0" departureTime="07:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_6" />
+                <departure id="2772593426_0" departureTime="07:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_7" />
+                <departure id="2772593427_0" departureTime="08:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_8" />
+                <departure id="2772593428_0" departureTime="08:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_9" />
+                <departure id="2772593429_0" departureTime="08:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_10" />
+                <departure id="2772593430_0" departureTime="09:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_11" />
+                <departure id="2772593431_0" departureTime="09:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_12" />
+                <departure id="2772593432_0" departureTime="10:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_13" />
+                <departure id="2772593433_0" departureTime="10:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_14" />
+                <departure id="2772593434_0" departureTime="10:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_15" />
+                <departure id="2772593435_0" departureTime="11:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_16" />
+                <departure id="2772593436_0" departureTime="11:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_17" />
+                <departure id="2772593437_0" departureTime="11:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_18" />
+                <departure id="2772593438_0" departureTime="12:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_19" />
+                <departure id="2772593439_0" departureTime="12:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_20" />
+                <departure id="2772593440_0" departureTime="12:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_21" />
+                <departure id="2772593441_0" departureTime="13:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_22" />
+                <departure id="2772593442_0" departureTime="13:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_23" />
+                <departure id="2772593443_0" departureTime="13:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_24" />
+                <departure id="2772593444_0" departureTime="14:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_25" />
+                <departure id="2772593445_0" departureTime="14:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_26" />
+                <departure id="2772593446_0" departureTime="14:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_27" />
+                <departure id="2772593447_0" departureTime="15:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_28" />
+                <departure id="2772593448_0" departureTime="15:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_29" />
+                <departure id="2772593449_0" departureTime="15:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_30" />
+                <departure id="2772593450_0" departureTime="16:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_31" />
+                <departure id="2772593451_0" departureTime="16:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_32" />
+                <departure id="2772593452_0" departureTime="16:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_33" />
+                <departure id="2772593453_0" departureTime="17:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_34" />
+                <departure id="2772593454_0" departureTime="17:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_35" />
+                <departure id="2772593455_0" departureTime="17:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_36" />
+                <departure id="2772593456_0" departureTime="18:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_37" />
+                <departure id="2772593457_0" departureTime="18:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_38" />
+                <departure id="2772593458_0" departureTime="18:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_39" />
+                <departure id="2772593459_0" departureTime="19:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_40" />
+                <departure id="2772593460_0" departureTime="19:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_41" />
+                <departure id="2772593461_0" departureTime="19:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_42" />
+                <departure id="2772593462_0" departureTime="20:04:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_43" />
+                <departure id="2772593463_0" departureTime="20:24:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_44" />
+                <departure id="2772593464_0" departureTime="20:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_45" />
+                <departure id="copied+24h_2772593420_0" departureTime="29:44:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_0_46" />
+            </departures>
+        </transitRoute>
+        <transitRoute id="S47---de:VBB:11000000|S-Bahn|S47:_109_1">
+            <attributes>
+                <attribute name="simple_route_type" class="java.lang.String">Suburban Railway</attribute>
+            </attributes>
+
+            <transportMode>Suburban Railway</transportMode>
+            <routeProfile>
+                <stop refId="de:11000:900192001_SuburbanRailway" arrivalOffset="00:00:00"
+                    departureOffset="00:00:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192002_SuburbanRailway" arrivalOffset="00:03:18"
+                    departureOffset="00:03:48" awaitDeparture="true" />
+                <stop refId="de:11000:900180003_SuburbanRailway" arrivalOffset="00:06:18"
+                    departureOffset="00:06:18" awaitDeparture="true" />
+            </routeProfile>
+            <route>
+                <link refId="pt_de:11000:900192001_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192001_SuburbanRailway-pt_de:11000:900192002_SuburbanRailway" />
+                <link refId="pt_de:11000:900192002_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192002_SuburbanRailway-pt_de:11000:900180003_SuburbanRailway" />
+                <link refId="pt_de:11000:900180003_SuburbanRailway" />
+            </route>
+            <departures>
+                <departure id="2772593510_0" departureTime="05:16:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_1_0" />
+                <departure id="2772593511_0" departureTime="05:36:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_1_1" />
+                <departure id="copied+24h_2772593510_0" departureTime="29:16:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_1_2" />
+                <departure id="copied+24h_2772593511_0" departureTime="29:36:24"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_1_3" />
+            </departures>
+        </transitRoute>
+        <transitRoute id="S47---de:VBB:11000000|S-Bahn|S47:_109_2">
+            <attributes>
+                <attribute name="simple_route_type" class="java.lang.String">Suburban Railway</attribute>
+            </attributes>
+
+            <transportMode>Suburban Railway</transportMode>
+            <routeProfile>
+                <stop refId="de:11000:900192001_SuburbanRailway" arrivalOffset="00:00:00"
+                    departureOffset="00:00:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192002_SuburbanRailway" arrivalOffset="00:03:00"
+                    departureOffset="00:03:30" awaitDeparture="true" />
+                <stop refId="de:11000:900180003_SuburbanRailway" arrivalOffset="00:06:00"
+                    departureOffset="00:06:00" awaitDeparture="true" />
+            </routeProfile>
+            <route>
+                <link refId="pt_de:11000:900192001_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192001_SuburbanRailway-pt_de:11000:900192002_SuburbanRailway" />
+                <link refId="pt_de:11000:900192002_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192002_SuburbanRailway-pt_de:11000:900180003_SuburbanRailway" />
+                <link refId="pt_de:11000:900180003_SuburbanRailway" />
+            </route>
+            <departures>
+                <departure id="2772593516_0" departureTime="04:59:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_0" />
+                <departure id="2772593520_0" departureTime="21:21:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_1" />
+                <departure id="2772593521_0" departureTime="21:40:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_2" />
+                <departure id="2772593522_0" departureTime="22:00:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_3" />
+                <departure id="2772593523_0" departureTime="22:20:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_4" />
+                <departure id="2772593524_0" departureTime="22:40:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_5" />
+                <departure id="2772593525_0" departureTime="23:00:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_6" />
+                <departure id="2772593526_0" departureTime="23:20:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_7" />
+                <departure id="2772593527_0" departureTime="23:40:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_8" />
+                <departure id="2772593528_0" departureTime="24:00:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_9" />
+                <departure id="2772593529_0" departureTime="24:20:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_10" />
+                <departure id="2772593530_0" departureTime="24:40:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_11" />
+                <departure id="2772593531_0" departureTime="25:00:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_12" />
+                <departure id="2772593532_0" departureTime="25:20:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_13" />
+                <departure id="2772593547_0" departureTime="04:19:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_14" />
+                <departure id="2772593548_0" departureTime="04:39:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_15" />
+                <departure id="copied+24h_2772593516_0" departureTime="28:59:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_16" />
+                <departure id="copied+24h_2772593547_0" departureTime="28:19:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_17" />
+                <departure id="copied+24h_2772593548_0" departureTime="28:39:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_18" />
+                <departure id="copied-24h_2772593528_0" departureTime="00:00:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_19" />
+                <departure id="copied-24h_2772593529_0" departureTime="00:20:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_20" />
+                <departure id="copied-24h_2772593530_0" departureTime="00:40:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_21" />
+                <departure id="copied-24h_2772593531_0" departureTime="01:00:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_22" />
+                <departure id="copied-24h_2772593532_0" departureTime="01:20:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_2_23" />
+            </departures>
+        </transitRoute>
+        <transitRoute id="S47---de:VBB:11000000|S-Bahn|S47:_109_3">
+            <attributes>
+                <attribute name="simple_route_type" class="java.lang.String">Suburban Railway</attribute>
+            </attributes>
+
+            <transportMode>Suburban Railway</transportMode>
+            <routeProfile>
+                <stop refId="de:11000:900180003_SuburbanRailway" arrivalOffset="00:00:00"
+                    departureOffset="00:00:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192002_SuburbanRailway" arrivalOffset="00:02:12"
+                    departureOffset="00:02:42" awaitDeparture="true" />
+                <stop refId="de:11000:900192001_SuburbanRailway" arrivalOffset="00:06:00"
+                    departureOffset="00:06:00" awaitDeparture="true" />
+            </routeProfile>
+            <route>
+                <link refId="pt_de:11000:900180003_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900180003_SuburbanRailway-pt_de:11000:900192002_SuburbanRailway" />
+                <link refId="pt_de:11000:900192002_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192002_SuburbanRailway-pt_de:11000:900192001_SuburbanRailway" />
+                <link refId="pt_de:11000:900192001_SuburbanRailway" />
+            </route>
+            <departures>
+                <departure id="2772593557_0" departureTime="21:30:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_0" />
+                <departure id="2772593558_0" departureTime="21:50:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_1" />
+                <departure id="2772593559_0" departureTime="22:10:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_2" />
+                <departure id="2772593560_0" departureTime="22:30:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_3" />
+                <departure id="2772593561_0" departureTime="22:50:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_4" />
+                <departure id="2772593562_0" departureTime="23:10:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_5" />
+                <departure id="2772593563_0" departureTime="23:30:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_6" />
+                <departure id="2772593564_0" departureTime="23:50:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_7" />
+                <departure id="2772593565_0" departureTime="24:10:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_8" />
+                <departure id="2772593566_0" departureTime="24:30:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_9" />
+                <departure id="2772593567_0" departureTime="24:50:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_10" />
+                <departure id="2772593568_0" departureTime="25:10:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_11" />
+                <departure id="2772593661_0" departureTime="04:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_12" />
+                <departure id="2772593662_0" departureTime="04:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_13" />
+                <departure id="2772593663_0" departureTime="04:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_14" />
+                <departure id="2772593666_0" departureTime="21:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_15" />
+                <departure id="copied+24h_2772593661_0" departureTime="28:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_16" />
+                <departure id="copied+24h_2772593662_0" departureTime="28:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_17" />
+                <departure id="copied+24h_2772593663_0" departureTime="28:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_18" />
+                <departure id="copied-24h_2772593565_0" departureTime="00:10:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_19" />
+                <departure id="copied-24h_2772593566_0" departureTime="00:30:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_20" />
+                <departure id="copied-24h_2772593567_0" departureTime="00:50:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_21" />
+                <departure id="copied-24h_2772593568_0" departureTime="01:10:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_3_22" />
+            </departures>
+        </transitRoute>
+        <transitRoute id="S47---de:VBB:11000000|S-Bahn|S47:_109_4">
+            <attributes>
+                <attribute name="simple_route_type" class="java.lang.String">Suburban Railway</attribute>
+            </attributes>
+
+            <transportMode>Suburban Railway</transportMode>
+            <routeProfile>
+                <stop refId="de:11000:900180003_SuburbanRailway" arrivalOffset="00:00:00"
+                    departureOffset="00:00:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192002_SuburbanRailway" arrivalOffset="00:02:12"
+                    departureOffset="00:02:42" awaitDeparture="true" />
+                <stop refId="de:11000:900192001_SuburbanRailway" arrivalOffset="00:06:06"
+                    departureOffset="00:06:36" awaitDeparture="true" />
+                <stop refId="de:11000:900191001_SuburbanRailway" arrivalOffset="00:08:48"
+                    departureOffset="00:09:18" awaitDeparture="true" />
+                <stop refId="de:11000:900077155_SuburbanRailway" arrivalOffset="00:11:18"
+                    departureOffset="00:13:42" awaitDeparture="true" />
+                <stop refId="de:11000:900078201_SuburbanRailway" arrivalOffset="00:15:42"
+                    departureOffset="00:16:12" awaitDeparture="true" />
+                <stop refId="de:11000:900079221_SuburbanRailway" arrivalOffset="00:17:30"
+                    departureOffset="00:17:30" awaitDeparture="true" />
+            </routeProfile>
+            <route>
+                <link refId="pt_de:11000:900180003_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900180003_SuburbanRailway-pt_de:11000:900192002_SuburbanRailway" />
+                <link refId="pt_de:11000:900192002_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192002_SuburbanRailway-pt_de:11000:900192001_SuburbanRailway" />
+                <link refId="pt_de:11000:900192001_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192001_SuburbanRailway-pt_de:11000:900191001_SuburbanRailway" />
+                <link refId="pt_de:11000:900191001_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900191001_SuburbanRailway-pt_de:11000:900077155_SuburbanRailway" />
+                <link refId="pt_de:11000:900077155_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900077155_SuburbanRailway-pt_de:11000:900078201_SuburbanRailway" />
+                <link refId="pt_de:11000:900078201_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900078201_SuburbanRailway-pt_de:11000:900079221_SuburbanRailway" />
+                <link refId="pt_de:11000:900079221_SuburbanRailway" />
+            </route>
+            <departures>
+                <departure id="2772593570_0" departureTime="05:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_0" />
+                <departure id="2772593571_0" departureTime="05:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_1" />
+                <departure id="2772593572_0" departureTime="05:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_2" />
+                <departure id="2772593573_0" departureTime="06:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_3" />
+                <departure id="2772593574_0" departureTime="06:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_4" />
+                <departure id="2772593575_0" departureTime="06:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_5" />
+                <departure id="2772593576_0" departureTime="07:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_6" />
+                <departure id="2772593577_0" departureTime="07:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_7" />
+                <departure id="2772593578_0" departureTime="07:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_8" />
+                <departure id="2772593579_0" departureTime="08:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_9" />
+                <departure id="2772593580_0" departureTime="08:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_10" />
+                <departure id="2772593581_0" departureTime="08:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_11" />
+                <departure id="2772593582_0" departureTime="09:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_12" />
+                <departure id="2772593583_0" departureTime="09:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_13" />
+                <departure id="2772593584_0" departureTime="09:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_14" />
+                <departure id="2772593585_0" departureTime="10:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_15" />
+                <departure id="2772593586_0" departureTime="10:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_16" />
+                <departure id="2772593587_0" departureTime="10:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_17" />
+                <departure id="2772593588_0" departureTime="11:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_18" />
+                <departure id="2772593589_0" departureTime="11:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_19" />
+                <departure id="2772593590_0" departureTime="11:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_20" />
+                <departure id="2772593591_0" departureTime="12:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_21" />
+                <departure id="2772593592_0" departureTime="12:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_22" />
+                <departure id="2772593593_0" departureTime="12:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_23" />
+                <departure id="2772593594_0" departureTime="13:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_24" />
+                <departure id="2772593595_0" departureTime="13:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_25" />
+                <departure id="2772593596_0" departureTime="13:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_26" />
+                <departure id="2772593597_0" departureTime="14:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_27" />
+                <departure id="2772593598_0" departureTime="14:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_28" />
+                <departure id="2772593599_0" departureTime="14:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_29" />
+                <departure id="2772593600_0" departureTime="15:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_30" />
+                <departure id="2772593601_0" departureTime="15:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_31" />
+                <departure id="2772593602_0" departureTime="15:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_32" />
+                <departure id="2772593603_0" departureTime="16:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_33" />
+                <departure id="2772593604_0" departureTime="16:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_34" />
+                <departure id="2772593605_0" departureTime="16:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_35" />
+                <departure id="2772593606_0" departureTime="17:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_36" />
+                <departure id="2772593607_0" departureTime="17:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_37" />
+                <departure id="2772593608_0" departureTime="17:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_38" />
+                <departure id="2772593609_0" departureTime="18:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_39" />
+                <departure id="2772593610_0" departureTime="18:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_40" />
+                <departure id="2772593611_0" departureTime="18:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_41" />
+                <departure id="2772593612_0" departureTime="19:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_42" />
+                <departure id="2772593613_0" departureTime="19:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_43" />
+                <departure id="2772593614_0" departureTime="19:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_44" />
+                <departure id="2772593615_0" departureTime="20:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_45" />
+                <departure id="2772593616_0" departureTime="20:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_46" />
+                <departure id="copied+24h_2772593570_0" departureTime="29:09:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_47" />
+                <departure id="copied+24h_2772593571_0" departureTime="29:29:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_48" />
+                <departure id="copied+24h_2772593572_0" departureTime="29:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_4_49" />
+            </departures>
+        </transitRoute>
+        <transitRoute id="S47---de:VBB:11000000|S-Bahn|S47:_109_5">
+            <attributes>
+                <attribute name="simple_route_type" class="java.lang.String">Suburban Railway</attribute>
+            </attributes>
+
+            <transportMode>Suburban Railway</transportMode>
+            <routeProfile>
+                <stop refId="de:11000:900180003_SuburbanRailway" arrivalOffset="00:00:00"
+                    departureOffset="00:00:00" awaitDeparture="true" />
+                <stop refId="de:11000:900192002_SuburbanRailway" arrivalOffset="00:02:12"
+                    departureOffset="00:02:42" awaitDeparture="true" />
+                <stop refId="de:11000:900192001_SuburbanRailway" arrivalOffset="00:06:06"
+                    departureOffset="00:06:06" awaitDeparture="true" />
+            </routeProfile>
+            <route>
+                <link refId="pt_de:11000:900180003_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900180003_SuburbanRailway-pt_de:11000:900192002_SuburbanRailway" />
+                <link refId="pt_de:11000:900192002_SuburbanRailway" />
+                <link
+                    refId="pt_de:11000:900192002_SuburbanRailway-pt_de:11000:900192001_SuburbanRailway" />
+                <link refId="pt_de:11000:900192001_SuburbanRailway" />
+            </route>
+            <departures>
+                <departure id="2772593659_0" departureTime="20:49:12"
+                    vehicleRefId="pt_S47---de:VBB:11000000|S-Bahn|S47:_109_5_0" />
+            </departures>
+        </transitRoute>
+    </transitLine>
+</transitSchedule>
