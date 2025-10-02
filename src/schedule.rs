@@ -1,13 +1,12 @@
-use std::fs::File;
-use std::io::BufReader;
+use bevy::prelude::*;
+use chrono::TimeDelta;
+use chrono::prelude::*;
+use proj::Proj;
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
-use proj::Proj;
-use chrono::prelude::*;
-use chrono::TimeDelta;
-use bevy::prelude::*;
 use std::collections::HashMap;
-
+use std::fs::File;
+use std::io::BufReader;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 enum RouteType {
@@ -18,7 +17,7 @@ enum RouteType {
     SuburbanRail,
     HighSpeedRail,
     RegionalRail,
-    Other
+    Other,
 }
 
 impl RouteType {
@@ -49,9 +48,9 @@ pub struct StopFacility {
     pub stop_area_id: Option<String>,
     pub lat: Option<f64>,
     pub lon: Option<f64>,
-    pub routes: Vec<Entity>,
-    pub lines: Vec<Entity>,
-    pub departures: Vec<Entity>,
+    pub routes: Vec<Entity>,     // relationship?
+    pub lines: Vec<Entity>,      // relationship?
+    pub departures: Vec<Entity>, // relationship?
 }
 
 #[derive(Component, Clone, Debug)]
@@ -64,7 +63,6 @@ pub struct Departure {
     pub trip: Entity,
     pub route: Entity,
 }
-
 
 #[derive(Component, Clone, Debug)]
 struct Line {
@@ -110,7 +108,6 @@ struct RouteProfilePoint {
     departure_offset: TimeDelta,
 }
 
-
 #[derive(Resource)]
 pub struct Schedule {
     pub path: String,
@@ -139,17 +136,14 @@ pub struct SchedulePlugin {
 }
 
 impl SchedulePlugin {
-
-    pub fn load(
-        world: &mut World,
-    ) {
+    pub fn load(world: &mut World) {
         let path = world.get_resource::<Schedule>().unwrap().path.clone();
         info!("Loading schedule from XML");
         let file = File::open(path).expect("Failed to open schedule file");
         let file = BufReader::new(file);
         let mut reader = Reader::from_reader(file);
         reader.config_mut().trim_text(true);
-        
+
         let mut buf = Vec::new();
 
         let mut in_line = false;
@@ -177,47 +171,66 @@ impl SchedulePlugin {
             match reader.read_event_into(&mut buf) {
                 Ok(Event::Eof) => break,
                 Err(e) => error!("Error at position {}: {:?}", reader.buffer_position(), e),
-                
 
                 Ok(Event::Start(ref e)) if e.name().as_ref() == b"stopFacility" => {
-                            let mut id = String::new();
-                            let mut x = 0.0;
-                            let mut y = 0.0;
-                            let mut name = None;
-                            let mut stop_area_id = None;
+                    let mut id = String::new();
+                    let mut x = 0.0;
+                    let mut y = 0.0;
+                    let mut name = None;
+                    let mut stop_area_id = None;
 
-                            for attr in e.attributes().flatten() {
-                                match attr.key.as_ref() {
-                                    b"id" => id = attr.unescape_value().unwrap().to_string(),
-                                    b"x" => x = attr.unescape_value().unwrap().to_string().parse().unwrap_or(0.0),
-                                    b"y" => y = attr.unescape_value().unwrap().to_string().parse().unwrap_or(0.0),
-                                    b"name" => name = Some(attr.unescape_value().unwrap().to_string()),
-                                    b"stopAreaId" => stop_area_id = Some(attr.unescape_value().unwrap().to_string()),
-                                    _ => (),
-                                }
+                    for attr in e.attributes().flatten() {
+                        match attr.key.as_ref() {
+                            b"id" => id = attr.unescape_value().unwrap().to_string(),
+                            b"x" => {
+                                x = attr
+                                    .unescape_value()
+                                    .unwrap()
+                                    .to_string()
+                                    .parse()
+                                    .unwrap_or(0.0)
                             }
-
-                            let (lon, lat) = proj.convert((x, y)).unwrap_or((0.0, 0.0));
-
-                            let stop_facility = StopFacility {
-                                id: id.clone(),
-                                x,
-                                y,
-                                name: name.clone(),
-                                stop_area_id,
-                                lat: Some(lat),
-                                lon: Some(lon),
-                                routes: Vec::new(),
-                                lines: Vec::new(),
-                                departures: Vec::new(),
-                            };
-                            let entity = world.spawn(stop_facility).id();
-                            {
-                                let mut schedule = world.get_resource_mut::<Schedule>().unwrap();
-                                schedule.stop_facilities.insert(id.clone(), entity);
+                            b"y" => {
+                                y = attr
+                                    .unescape_value()
+                                    .unwrap()
+                                    .to_string()
+                                    .parse()
+                                    .unwrap_or(0.0)
                             }
-                            debug!("Added stop facility {} with id: {}", name.unwrap_or_default(), id);
-                },
+                            b"name" => name = Some(attr.unescape_value().unwrap().to_string()),
+                            b"stopAreaId" => {
+                                stop_area_id = Some(attr.unescape_value().unwrap().to_string())
+                            }
+                            _ => (),
+                        }
+                    }
+
+                    let (lon, lat) = proj.convert((x, y)).unwrap_or((0.0, 0.0));
+
+                    let stop_facility = StopFacility {
+                        id: id.clone(),
+                        x,
+                        y,
+                        name: name.clone(),
+                        stop_area_id,
+                        lat: Some(lat),
+                        lon: Some(lon),
+                        routes: Vec::new(),
+                        lines: Vec::new(),
+                        departures: Vec::new(),
+                    };
+                    let entity = world.spawn(stop_facility).id();
+                    {
+                        let mut schedule = world.get_resource_mut::<Schedule>().unwrap();
+                        schedule.stop_facilities.insert(id.clone(), entity);
+                    }
+                    debug!(
+                        "Added stop facility {} with id: {}",
+                        name.unwrap_or_default(),
+                        id
+                    );
+                }
                 Ok(Event::Start(ref e)) if e.name().as_ref() == b"transitLine" => {
                     debug!("Parsing transitLine element: {:?}", e);
                     for attr in e.attributes().flatten() {
@@ -231,15 +244,20 @@ impl SchedulePlugin {
                     in_line = true;
                     after_line_attributes = false;
                 }
-                Ok(Event::Start(ref e)) if in_line && !after_line_attributes && e.name().as_ref() == b"attributes" => {
+                Ok(Event::Start(ref e))
+                    if in_line && !after_line_attributes && e.name().as_ref() == b"attributes" =>
+                {
                     debug!("Parsing attributes for transitLine: {:?}", e);
                     in_line_attributes = true;
                 }
-                Ok(Event::Start(ref e)) if in_line && in_line_attributes && e.name().as_ref() == b"attribute" => {
+                Ok(Event::Start(ref e))
+                    if in_line && in_line_attributes && e.name().as_ref() == b"attribute" =>
+                {
                     debug!("Parsing attribute element for transitLine: {:?}", e);
                     for attr in e.attributes().flatten() {
                         if attr.key.as_ref() == b"name" {
-                            current_attribute_name = Some(attr.unescape_value().unwrap().to_string());
+                            current_attribute_name =
+                                Some(attr.unescape_value().unwrap().to_string());
                         }
                     }
                 }
@@ -253,16 +271,23 @@ impl SchedulePlugin {
                                 if let Ok(value) = text.parse::<u16>() {
                                     current_line_route_type = RouteType::from_int(value);
                                 }
-                            },
+                            }
                             _ => (),
                         }
                     }
                 }
-                Ok(Event::End(ref e)) if in_line && in_line_attributes && e.name().as_ref() == b"attribute" => {
-                    debug!("Finished parsing attribute element for transitLine: {:?}", e);
+                Ok(Event::End(ref e))
+                    if in_line && in_line_attributes && e.name().as_ref() == b"attribute" =>
+                {
+                    debug!(
+                        "Finished parsing attribute element for transitLine: {:?}",
+                        e
+                    );
                     current_attribute_name = None;
                 }
-                Ok(Event::End(ref e)) if in_line && in_line_attributes && e.name().as_ref() == b"attributes" => {
+                Ok(Event::End(ref e))
+                    if in_line && in_line_attributes && e.name().as_ref() == b"attributes" =>
+                {
                     debug!("Finished parsing attributes for transitLine: {:?}", e);
                     in_line_attributes = false;
                     after_line_attributes = true;
@@ -277,7 +302,9 @@ impl SchedulePlugin {
                     let entity = world.spawn(line.clone()).id();
                     {
                         let mut schedule = world.get_resource_mut::<Schedule>().unwrap();
-                        schedule.lines.insert(current_line.clone().unwrap_or_default(), entity);
+                        schedule
+                            .lines
+                            .insert(current_line.clone().unwrap_or_default(), entity);
                     }
                     current_line_entity = Some(entity);
                     debug!("Created line entity: {:?}", line);
@@ -315,7 +342,9 @@ impl SchedulePlugin {
                     debug!("started routeProfile element");
                     in_route_profile = true;
                 }
-                Ok(Event::Empty(ref e)) | Ok(Event::Start(ref e)) if in_route && in_route_profile && e.name().as_ref() == b"stop" => {
+                Ok(Event::Empty(ref e)) | Ok(Event::Start(ref e))
+                    if in_route && in_route_profile && e.name().as_ref() == b"stop" =>
+                {
                     debug!("Parsing stop element in routeProfile: {:?}", e);
                     let mut stop_id = None;
                     let mut arrival_offset = TimeDelta::zero();
@@ -326,18 +355,28 @@ impl SchedulePlugin {
                             b"refId" => stop_id = Some(attr.unescape_value().unwrap().to_string()),
                             b"arrivalOffset" => {
                                 if let Ok(offset) = attr.unescape_value() {
-                                    arrival_offset = NaiveTime::parse_from_str(&offset.to_string(), "%H:%M:%S")
-                                        .map(|t| TimeDelta::hours(t.hour() as i64) + TimeDelta::minutes(t.minute() as i64) + TimeDelta::seconds(t.second() as i64))
-                                        .unwrap_or(TimeDelta::zero());
+                                    arrival_offset =
+                                        NaiveTime::parse_from_str(&offset.to_string(), "%H:%M:%S")
+                                            .map(|t| {
+                                                TimeDelta::hours(t.hour() as i64)
+                                                    + TimeDelta::minutes(t.minute() as i64)
+                                                    + TimeDelta::seconds(t.second() as i64)
+                                            })
+                                            .unwrap_or(TimeDelta::zero());
                                 }
-                            },
+                            }
                             b"departureOffset" => {
                                 if let Ok(offset) = attr.unescape_value() {
-                                    departure_offset = NaiveTime::parse_from_str(&offset.to_string(), "%H:%M:%S")
-                                        .map(|t| TimeDelta::hours(t.hour() as i64) + TimeDelta::minutes(t.minute() as i64) + TimeDelta::seconds(t.second() as i64))
-                                        .unwrap_or(TimeDelta::zero());
+                                    departure_offset =
+                                        NaiveTime::parse_from_str(&offset.to_string(), "%H:%M:%S")
+                                            .map(|t| {
+                                                TimeDelta::hours(t.hour() as i64)
+                                                    + TimeDelta::minutes(t.minute() as i64)
+                                                    + TimeDelta::seconds(t.second() as i64)
+                                            })
+                                            .unwrap_or(TimeDelta::zero());
                                 }
-                            },
+                            }
                             _ => (),
                         }
                     }
@@ -358,15 +397,19 @@ impl SchedulePlugin {
                                 };
                                 let entity = world.spawn(route_profile_point.clone()).id();
                                 if let Some(mut route) = world.get_mut::<Route>(route_entity) {
-                                    debug!("Added route profile point for stop {} to route {:?}: {:?}", stop_id, route, route_profile_point);
+                                    debug!(
+                                        "Added route profile point for stop {} to route {:?}: {:?}",
+                                        stop_id, route, route_profile_point
+                                    );
                                     route.route_profile.push(entity);
                                 }
-                                
                             }
                         }
                     }
                 }
-                Ok(Event::End(ref e)) if in_route && in_route_profile && e.name().as_ref() == b"routeProfile" => {
+                Ok(Event::End(ref e))
+                    if in_route && in_route_profile && e.name().as_ref() == b"routeProfile" =>
+                {
                     debug!("Finished parsing routeProfile elements");
                     in_route_profile = false;
                 }
@@ -374,21 +417,27 @@ impl SchedulePlugin {
                     debug!("started departures element");
                     in_departures = true;
                 }
-                Ok(Event::Start(ref e)) | Ok(Event::Empty(ref e)) if in_route && in_departures && e.name().as_ref() == b"departure" => {
+                Ok(Event::Start(ref e)) | Ok(Event::Empty(ref e))
+                    if in_route && in_departures && e.name().as_ref() == b"departure" =>
+                {
                     debug!("Parsing departure element in departures: {:?}", e);
                     let mut departure_time = None;
                     let mut departure_id = None;
                     for attr in e.attributes().flatten() {
                         match attr.key.as_ref() {
-                            b"id" => departure_id = Some(attr.unescape_value().unwrap().to_string()),
+                            b"id" => {
+                                departure_id = Some(attr.unescape_value().unwrap().to_string())
+                            }
                             b"departureTime" => {
                                 if let Ok(time_str) = attr.unescape_value() {
-                                    if let Ok(naive_time) = NaiveTime::parse_from_str(&time_str.to_string(), "%H:%M:%S") {
+                                    if let Ok(naive_time) =
+                                        NaiveTime::parse_from_str(&time_str.to_string(), "%H:%M:%S")
+                                    {
                                         let today = Utc::now().date_naive();
                                         departure_time = Some(today.and_time(naive_time));
                                     }
                                 }
-                            },
+                            }
                             _ => (),
                         }
                     }
@@ -428,29 +477,33 @@ impl SchedulePlugin {
                     current_line_agency_id = None;
                     current_line_route_type = None;
                     in_line = false;
-                },
+                }
                 _ => (),
             };
             buf.clear();
-        };
+        }
     }
 
-    pub fn create_trips_and_departures(
-        world: &mut World,
-    ) {
+    pub fn create_trips_and_departures(world: &mut World) {
         // For each route, create trips and departures
 
         let routes = world.get_resource::<Schedule>().unwrap().routes.clone();
         for &route_entity in &routes {
             let (route_profile_entities, departure_entities, route_id, line) = {
                 if let Some(route) = world.get::<Route>(route_entity) {
-                    (route.route_profile.clone(), route.departures.clone(), route.id.clone(), route.line)
+                    (
+                        route.route_profile.clone(),
+                        route.departures.clone(),
+                        route.id.clone(),
+                        route.line,
+                    )
                 } else {
                     continue;
                 }
             };
 
-            let mut route_profile_points: Vec<RouteProfilePoint> = route_profile_entities.iter()
+            let mut route_profile_points: Vec<RouteProfilePoint> = route_profile_entities
+                .iter()
                 .filter_map(|&e| world.get::<RouteProfilePoint>(e).cloned())
                 .collect();
             route_profile_points.sort_by_key(|p| p.departure_offset);
@@ -495,11 +548,14 @@ impl SchedulePlugin {
                 // Link trip to line
                 // Create departures for each stop in the route profile
                 for profile_point in &route_profile_points {
-                    let departure_time = first_departure.departure_time + profile_point.departure_offset;
+                    let departure_time =
+                        first_departure.departure_time + profile_point.departure_offset;
                     let departure = Departure {
                         line_name: line_name.clone(),
                         route_headsign: headsign.clone().unwrap_or_default(),
-                        arrival_time: Some(first_departure.departure_time + profile_point.arrival_offset),
+                        arrival_time: Some(
+                            first_departure.departure_time + profile_point.arrival_offset,
+                        ),
                         departure_time: Some(departure_time),
                         stop: profile_point.stop,
                         trip: trip_entity,
@@ -511,7 +567,9 @@ impl SchedulePlugin {
                         schedule.departures.push(departure_entity);
                     }
                     // Link departure to stop facility
-                    if let Some(mut stop_facility) = world.get_mut::<StopFacility>(profile_point.stop) {
+                    if let Some(mut stop_facility) =
+                        world.get_mut::<StopFacility>(profile_point.stop)
+                    {
                         stop_facility.departures.push(departure_entity);
                     }
                     // Link departure to trip
@@ -528,7 +586,9 @@ impl Plugin for SchedulePlugin {
     fn build(&self, app: &mut App) {
         app.insert_resource(Schedule::new(self.path.clone()))
             .add_systems(Startup, SchedulePlugin::load)
-            .add_systems(Startup, SchedulePlugin::create_trips_and_departures.after(SchedulePlugin::load));
+            .add_systems(
+                Startup,
+                SchedulePlugin::create_trips_and_departures.after(SchedulePlugin::load),
+            );
     }
 }
-
